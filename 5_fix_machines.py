@@ -11,15 +11,15 @@ def fix_machine(debris, product):
     #print length
     for each_character in product:
         #print each_character
-        found = debris.find(each_character)
+        start_index = debris.find(each_character)
         #print found
         length = length - 1
-        if found == -1:
+        if start_index == -1:
             #if length > 0:
                 result = "Give me something that's not useless next time."
                 print result
                 break
-        if length == 0 and found > -1:
+        if length == 0 and start_index > -1:
         #else:
                 result = product
                 print result
