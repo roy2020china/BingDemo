@@ -10,3 +10,4 @@
 ## 3_number_of_stamps需要多少张邮票
 ## 4_range_of_a_set一组数值的范围
 ## 5_fix_machines修理机器 -第二个字符串中的字母是否都能在第一个字符串中找到
+## 6_days_between_two_dates计算两个日期之间的天数
