@@ -44,7 +44,7 @@
 # 3 星: 3 < 代码行数 <= 6
 # 4 星: 0 < 代码行数 <= 3
 
-# My Code One 我的代码一
+# My Code One: 11 lines 我的代码一: 11行
 def print_abacus(value):
     #row_list = ["|", "0", "0", "0", "0", "0", "*", "*", "*", "*", "*", " ", " ", " ", "|"]
     row_list_const = ["|", "0", "0", "0", "0", "0", "*", "*", "*", "*", "*", "|"]
@@ -59,10 +59,12 @@ def print_abacus(value):
         value_next %= (10 ** i)
         print row_str
         
-# My Code Two 我的代码二
+# My Code Two: 6 lines 我的代码二： 6行
 def print_abacus(value):
     for i in range(9, -1, -1):
         index_1 = 10 - value / (10 ** i)
         row_list_let = "|00000*****|"
         value %= (10 ** i)
         print row_list_let[:index_1] + (" " * 3) + row_list_let[index_1+1:]
+
+  # My Code Three:  lines 我的代码三： 6行  --to be continued
