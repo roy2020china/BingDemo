@@ -27,9 +27,25 @@ usa_univs = [ ['California Institute of Technology',2175,37704],
               ['Stanford',19535,40569],
               ['Yale',11701,40500]  ]
 
+# Solution 1 解决方案1
 def total_enrollment(list_of_lists):
     total = [0, 0, 0]
     for each_list in list_of_lists:
         total[1] += each_list[1]
         total[2] += each_list[1] * each_list[2]
     return total[1], total[2]
+
+# Solution 2 解决方案2  
+  def total_enrollment(p):
+    total_students = 0
+    total_tuition = 0
+    for name, students, price in p:  
+        total_students += students   
+        total_tuition += price
+    return total_tuition, total_students
+
+    # for i in p:
+    #     students = i[1]
+    #     price = i[2]
+    #     total_students += total_students + students
+    #     total_tuition += total_tuition + price
