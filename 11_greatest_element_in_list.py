@@ -8,6 +8,7 @@
 # 定义一个名为greatest的函数，传入一个正数列表，返回其中数值最大的正数。如果传入的是空列表，那么返回值应当为0。
 
 
+# Solution 1 解决方案1
 def greatest(list_of_numbers):
     # num = list_of_numbers[0]
     if not list_of_numbers:
@@ -23,6 +24,16 @@ def greater(a, b):
         return a
     else:
         return b
+
+    
+# Solution 2 解决方案2    
+def greatest(p):
+    bigger = 0
+    for i in p:
+        if i > bigger:
+            bigger = i
+    return bigger
+
 
 
 
