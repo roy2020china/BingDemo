@@ -86,6 +86,37 @@ months = ['January',
           'November',
           'December']
 # your code here
+def months_ext(months):
+    list_x = map(lambda m:one_to_many(m), months)
+    #print list_x
+    months_ext = reduce (lambda x, y: x + y, list_x)
+    #print months_ext
+    return months_ext
+
+
+def one_to_many(m):
+    length = len(m)
+    months_m = []
+    i = 0
+    while i+3 < length+1:
+        months_m.append(m[: i+3])
+        i = i + 1
+    return months_m
+
+
+def month_validate(month):
+    if month:
+        cap_month = month.lower().capitalize()
+        if cap_month in months_ext(months):
+            return month_full_name(cap_month)
+        else:
+            return None
+
+
+def month_full_name(cap_month):
+    length = len(cap_month)
+    result = filter(lambda m: cap_month == m[:length], months)
+    return result
 
 # print valid_month("january") 
 # => "January"    
