@@ -1,3 +1,6 @@
+# 一个小程序，Secret Message. 文件夹alphabet中是英文26个字母及部分标点符号的照片。运行程序过中，提示用户输入文件夹名称（比如test_folder）以及Secret Message的内容(比如“love you python”)。运行完程序后，在test_folder文件夹下的照片是“love you python”这个Secret Message中所有的字母和标点符号，但是顺序是杂乱无章的，所以这个时候它仍然是SECRET message. 但是在test_folder_copy文件中的照片排列顺序是正确的，message不再secret，其中我们可以看到message的内容是“love you python”. 具体代码以及截屏见 1. https://discussions.udacity.com/t/secret-message-mini-project-f/16125/2449
+# 2. https://github.com/roy2020china/BingDemo/blob/master/15_Secret_message.py
+
 # There are images for "A~Z", " " and "," in file folder named "alphabet", which can be downloaded from https://s3.amazonaws.com/udacity-hosted-downloads/ud036/alphabet.zip . Images are downloaded and stored on my local machine at "/Users/ABC/Temp/alphabet/". 
 # Prompt user to provide a name for a new file folder, such as "test_folder". File path is "/Users/ABC/Temp/test_folder/"
 # Prompt user to provide a hidden message, such as "love you python".
