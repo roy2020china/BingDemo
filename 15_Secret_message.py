@@ -3,6 +3,7 @@
 # Prompt user to provide a hidden message, such as "love you python".
 # Pick photos from alphabet according to the user's hidden message and move them to test_folder. In our case, chennai.jpg, dallas1.jpg, ithaca.jpg, beijing.jpg, madrid1.jpg, kiev1.jpg, dallas2.jpg, istanbul.jpg, madrid2.jpg, delhi.jpg, kiev2.jpg, hyderabad.jpg, bristol.jpg, dallas3.jpg, colombo.jpg will be selected and moved to test_folder.
 # Re-arrange all the photos in test_folder in the order of "LOVE YOU PYTHON".
+# Snap shots can be referred to at  https://discussions.udacity.com/t/secret-message-mini-project-f/16125/2449
 
 
 import os
